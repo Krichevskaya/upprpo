@@ -5,7 +5,8 @@ import { Breadcrumb } from 'rsuite';
 import { Container, Header, Content, Footer, Sidebar } from 'rsuite';
 import { Tag, TagGroup } from 'rsuite';
 import { FlexboxGrid } from 'rsuite';
-import { List, Steps, Rate, Grid } from 'rsuite';
+import { List, Steps, Rate, Grid, Checkbox, Form,
+    Radio, Panel, CheckboxGroup } from 'rsuite';
 
 import 'rsuite/dist/rsuite.min.css';
 
