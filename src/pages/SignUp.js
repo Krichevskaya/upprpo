@@ -7,7 +7,7 @@ import * as components from './../components/Navbar'
 export default class SignUp extends Component {
     render () {
         return(
-            <FlexboxGrid justify="center" >
+            <FlexboxGrid justify="center" align="middle" style={{ height: '100%' }}>
                 <FlexboxGrid.Item colspan={12}>
                     <Panel header={<h3>Sign Up</h3>} bordered>
                         <Form fluid>
