@@ -8,7 +8,6 @@ import './css/index.css'
 
 import App from './App'
 
-// создаём кастомную историю
 const history = createBrowserHistory()
 
 ReactDOM.render((
