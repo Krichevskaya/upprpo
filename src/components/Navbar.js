@@ -18,7 +18,7 @@ export const NavBar = () => {
             </Nav>
             <Nav pullRight>
                 <Nav.Item href="/login">Log in</Nav.Item>
-                <Nav.Item href="/signup">Sugn up</Nav.Item>
+                <Nav.Item href="/signup">Sign up</Nav.Item>
             </Nav>
         </Navbar>
     )

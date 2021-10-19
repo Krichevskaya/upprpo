@@ -13,8 +13,6 @@ export default class Home extends Component {
         return (
             <Container>
 
-                <components.NavBar />
-
                 <div className="show-grid">
                     <FlexboxGrid justify="center">
                         <FlexboxGrid.Item colspan={16} align='left'>
@@ -64,11 +62,6 @@ export default class Home extends Component {
 
                     </FlexboxGrid>
                 </div>
-
-                <Footer>
-                    COCKTAIL WEBSITE
-                    Made bu NSU students
-                </Footer>
 
             </Container>
         )

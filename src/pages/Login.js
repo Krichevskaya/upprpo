@@ -21,7 +21,7 @@ export default function Login() {
             <Form.Group>
               <ButtonToolbar>
                 <Button appearance="primary">Sign in</Button>
-                <Button appearance="link">Forgot password?</Button>
+                <Button appearance="link" href="/signup">Sign up</Button>
               </ButtonToolbar>
             </Form.Group>
           </Form>

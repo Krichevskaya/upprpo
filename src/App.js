@@ -28,9 +28,12 @@ class App extends Component {
               <Redirect from='/' to='/home'/>
             </Switch>
           </Content>
-          <Footer>
-            Footer
-          </Footer>
+          
+            <div className={styles.footer}>
+              <p>COCKTAIL WEBSITE</p>
+              <p>Made by NSU students</p>
+            </div>
+          
         </Container>
     );
   }
