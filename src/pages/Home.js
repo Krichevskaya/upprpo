@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, Dropdown, Row, Col} from 'rsuite';
 
 import * as components from './../components/Navbar'
 
@@ -11,6 +10,7 @@ export default class Home extends Component {
         return (
             <div>
                 <components.NavBar />
+                <a href="/receipe">Бомжатский просмотр рецепта</a>
             </div>
         )
     }

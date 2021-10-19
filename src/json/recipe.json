@@ -1,0 +1,27 @@
+{
+  "id": 1001,
+  "title": "Mojito",
+  "tags": [
+    "tag 1 mojito",
+	  "tag 2 mojito"
+  ],
+  "ingredients": [
+    "10 fresh mint leaves",
+    "lime, cut into 4 wedges",
+    "2 tablespoons white sugar, or to taste",
+    "1 cup ice cubes",
+    "10 and half fluid ounces white rum",
+    "half cup club soda"
+  ],
+  "updated": "2021-01-30T08:30:00Z",
+  "author": "Olivia French",
+  "authorId": 1001,
+  "rating": 4.8,
+  "ratingNums": 11,
+  "iconUrl": "/images/mojito-1.jpg",
+  "description": "string",
+  "steps": [
+    "Muddle the lime juice, sugar and mint leaves in a small jug, crushing the mint as you go – you can use the end of a rolling pin for this. Pour into a tall glass and add a handful of ice.",
+    "Pour over the rum, stirring with a long-handled spoon. Top up with soda water, garnish with mint and serve."
+  ]
+}

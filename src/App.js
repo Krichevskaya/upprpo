@@ -9,9 +9,10 @@ import {
 
 import './css/App.css';
 
-import NotFound from './pages/NotFound'
 import Login from './pages/Login'
 import Home from './pages/Home'
+import SignUp from './pages/SignUp'
+import Receipe from './pages/Receipe'
 
 class App extends Component {
   render() {
@@ -22,6 +23,8 @@ class App extends Component {
         <Switch>
           <Route history={history} path='/home' component={Home} />
           <Route history={history} path='/login' component={Login} />
+          <Route history={history} path='/signup' component={SignUp} />
+          <Route history={history} path='/receipe' component={Receipe} />
           <Redirect from='/' to='/home'/>
         </Switch>
       </div>
