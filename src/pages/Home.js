@@ -46,50 +46,50 @@ export default class Home extends Component {
 
             <Container>
 
-                <br /> <br /> <br />
-
-                <a href="/receipe">Бомжатский просмотр рецепта</a>
-
-
                 <div className="show-grid">
                     <FlexboxGrid justify="center">
                         <FlexboxGrid.Item colspan={16} align='left'>
 
-                            <Panel header="Search" collapsible bordered>
-                                <Form>
-                                    <Form.Group controlId="search">
-                                        <Form.ControlLabel>Search:</Form.ControlLabel>
-                                        <Form.Control name="search" placeholder="Search by name" style={{ width: '100%' }}/>
-                                    </Form.Group>
+                            <div style={{ padding: '48px 0 48px' }}>
 
-                                    <Form.Group controlId="tagPicker">
-                                        <Form.ControlLabel>Ingredients:</Form.ControlLabel>
-                                        <Form.Control name="tagPicker" placeholder="Search by ingredients" style={{ width: '100%' }} accepter={TagPicker} 
-                                                      data={transformData(allIngredients.ingredients)} />
-                                    </Form.Group>
+                                <Panel header="Search" collapsible bordered >
+                                    <Form>
+                                        <Form.Group controlId="search">
+                                            <Form.ControlLabel>Search:</Form.ControlLabel>
+                                            <Form.Control name="search" placeholder="Search by name" style={{ width: '100%' }} />
+                                        </Form.Group>
 
-                                    <Form.Group controlId="radio">
-                                        <Form.ControlLabel>Rating:</Form.ControlLabel>
-                                        <Form.Control name="radio" accepter={RadioGroup} inline>
-                                            <Radio value="3+">3 and higher</Radio>
-                                            <Radio value="4+">4 and higher</Radio>
-                                            <Radio value="5">5</Radio>
-                                        </Form.Control>
-                                    </Form.Group>
+                                        <Form.Group controlId="tagPicker">
+                                            <Form.ControlLabel>Ingredients:</Form.ControlLabel>
+                                            <Form.Control name="tagPicker" placeholder="Search by ingredients" style={{ width: '100%' }} accepter={TagPicker}
+                                                data={transformData(allIngredients.ingredients)} />
+                                        </Form.Group>
 
-                                    <Form.Group controlId="checkbox">
-                                        <Form.ControlLabel>Tags:</Form.ControlLabel>
-                                        <PrintTags tags={allTags.tags} />
-                                    </Form.Group>
+                                        <Form.Group controlId="radio">
+                                            <Form.ControlLabel>Rating:</Form.ControlLabel>
+                                            <Form.Control name="radio" accepter={RadioGroup} inline>
+                                                <Radio value="3+">3 and higher</Radio>
+                                                <Radio value="4+">4 and higher</Radio>
+                                                <Radio value="5">5</Radio>
+                                            </Form.Control>
+                                        </Form.Group>
 
-                                </Form>
-                            </Panel>
+                                        <Form.Group controlId="checkbox">
+                                            <Form.ControlLabel>Tags:</Form.ControlLabel>
+                                            <PrintTags tags={allTags.tags} />
+                                        </Form.Group>
 
-                            <components.Card data={recipes.recipes[0]}/>
+                                    </Form>
+                                </Panel>
+                            </div>
+
+                            <a href='/recipe'>Mojito</a>
+
+                            {/* <components.Card data={recipes.recipes[0]}/> */}
 
                             {/* <components.CardGroup data={recipes.recipes}/> */}
 
-                        
+
                         </FlexboxGrid.Item>
                     </FlexboxGrid>
                 </div>

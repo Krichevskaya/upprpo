@@ -21,6 +21,7 @@ export const NavBar = () => {
             </Nav>
             {/* window.location.pathname выведет /home или /signup */}
             <Nav pullRight>
+                <Nav.Item href="/account">Account</Nav.Item>
                 <Nav.Item href="/login">Log in</Nav.Item>
                 <Nav.Item href="/signup">Sign up</Nav.Item>
             </Nav>
@@ -109,7 +110,7 @@ function ingrToString(data) {
 export const Card = ({ data }) => {
     return (
         <Panel shaded bordered bodyFill style={{ display: 'inline-block', width: 360 }}>
-            <img src="https://via.placeholder.com/240x240" height="240" width="360" />
+            <img src={"https://via.placeholder.com/240x240"} height="240" width="360" />
             <Panel header={data.title}>
                 {/* <p>
                     <small>
