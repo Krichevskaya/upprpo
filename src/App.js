@@ -6,7 +6,7 @@ import styles from './css/App.module.css';
 import Login from './pages/Login'
 import Home from './pages/Home'
 import SignUp from './pages/SignUp'
-import Receipe from './pages/Receipe'
+import Recipe from './pages/Recipe'
 import { NavBar } from './components/Navbar';
 import { Container, Content, Footer, Header } from 'rsuite';
 
@@ -24,7 +24,7 @@ class App extends Component {
               <Route history={history} path='/home' component={Home}/>
               <Route history={history} path='/login' component={Login}/>
               <Route history={history} path='/signup' component={SignUp} />
-              <Route history={history} path='/receipe' component={Receipe} />
+              <Route history={history} path='/recipe' component={Recipe} />
               <Redirect from='/' to='/home'/>
             </Switch>
           </Content>

@@ -3,14 +3,22 @@ import React, { Component } from 'react'
 import 'rsuite/dist/rsuite.min.css';
 import {
     Sidenav, Container, Divider, FlexboxGrid, Input, Checkbox, Form,
-    Radio, Panel, CheckboxGroup, TagPicker, RadioGroup
+    Radio, Panel, CheckboxGroup, TagPicker, RadioGroup, InputGroup
 } from 'rsuite';
 
 import allTags from './../json/tags.json';
 import allIngredients from './../json/ingredients.json';
 
+import recipes from './../json/recipes.json';
+
+import './../css/index.css';
+
+import * as components from './../components/Navbar'
+
 function transformData(data) {
     const array = [];
+
+    data.sort();
 
     data.forEach(item => array.push({
         "label": item,
@@ -40,18 +48,29 @@ export default class Home extends Component {
 
                 <br /> <br /> <br />
 
+                <a href="/receipe">Бомжатский просмотр рецепта</a>
+
+
                 <div className="show-grid">
                     <FlexboxGrid justify="center">
                         <FlexboxGrid.Item colspan={16} align='left'>
 
-                            <Panel>
+                            <Panel header="Search" collapsible bordered>
                                 <Form>
+                                    <Form.Group controlId="search">
+                                        <Form.ControlLabel>Search:</Form.ControlLabel>
+                                        <Form.Control name="search" placeholder="Search by name" style={{ width: '100%' }}/>
+                                    </Form.Group>
 
-                                    <Input placeholder="Default Input" />
+                                    <Form.Group controlId="tagPicker">
+                                        <Form.ControlLabel>Ingredients:</Form.ControlLabel>
+                                        <Form.Control name="tagPicker" placeholder="Search by ingredients" style={{ width: '100%' }} accepter={TagPicker} 
+                                                      data={transformData(allIngredients.ingredients)} />
+                                    </Form.Group>
 
                                     <Form.Group controlId="radio">
                                         <Form.ControlLabel>Rating:</Form.ControlLabel>
-                                        <Form.Control name="radio" accepter={RadioGroup}>
+                                        <Form.Control name="radio" accepter={RadioGroup} inline>
                                             <Radio value="3+">3 and higher</Radio>
                                             <Radio value="4+">4 and higher</Radio>
                                             <Radio value="5">5</Radio>
@@ -63,30 +82,17 @@ export default class Home extends Component {
                                         <PrintTags tags={allTags.tags} />
                                     </Form.Group>
 
-                                    <Form.Group controlId="tagPicker">
-                                        <Form.ControlLabel>Ingredients:</Form.ControlLabel>
-                                        <Form.Control name="tagPicker" accepter={TagPicker} data={transformData(allIngredients.ingredients)} />
-                                    </Form.Group>
-
                                 </Form>
                             </Panel>
 
+                            <components.Card data={recipes.recipes[0]}/>
+
+                            {/* <components.CardGroup data={recipes.recipes}/> */}
+
+                        
                         </FlexboxGrid.Item>
                     </FlexboxGrid>
                 </div>
-
-                <Divider />
-
-                <div>
-                    <a href="/receipe">Бомжатский просмотр рецепта</a>
-                </div>
-
-                <Divider />
-
-                <div>
-                    <p>haha</p>
-                </div>
-
             </Container>
         )
     }

@@ -2,16 +2,36 @@
   "id": 1001,
   "title": "Mojito",
   "tags": [
-    "tag 1 mojito",
-	  "tag 2 mojito"
+    "low alcohol",
+	  "mint",
+    "rum cocktail",
+    "citrus"
   ],
   "ingredients": [
-    "10 fresh mint leaves",
-    "lime, cut into 4 wedges",
-    "2 tablespoons white sugar, or to taste",
-    "1 cup ice cubes",
-    "10 and half fluid ounces white rum",
-    "half cup club soda"
+    {
+      "label": "mint",
+      "value": "10 fresh mint leaves"
+    },
+    {
+      "label": "lime",
+      "value": "lime, cut into 4 wedges"
+    },
+    {
+      "label": "white sugar",
+      "value": "2 tablespoons white sugar, or to taste"
+    },
+    {
+      "label": "ice",
+      "value": "1 cup ice cubes"
+    },
+    {
+      "label": "white rum",
+      "value": "10 and half fluid ounces white rum"
+    },
+    {
+      "label": "soda",
+      "value": "half cup club soda"
+    }
   ],
   "updated": "2021-01-30T08:30:00Z",
   "author": "Olivia French",
